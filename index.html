@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Musica</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="musica-container container pd-inline">
+      <header class="header-container container">
+        <div class="header-header">
+          <nav class="header-nav" role="navigation">
+            <div class="hamburger-container">
+              <div class="hamburger">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+              </div>
+            </div>
+            <div class="logo">
+              <img src="./images/logo.svg" alt="logo" class="img-logo" />
+            </div>
+            <div class="search-container">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                name="search"
+                id="searchArtists"
+                suggestions="off"
+                placeholder="Search artists"
+                suggestions="off"
+                autocomplete="off"
+              />
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="hero-section-container pb-3 pt-7">
+        <div class="hero-section">
+          <nav class="side-nav" role="navigation">
+            <ul class="nav-links-primary">
+              <li>
+                <a href="#"><img src="./musica-icons/home.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./musica-icons/playlist-blanc.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./musica-icons/radio.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./musica-icons/videos.png" alt="" /></a>
+              </li>
+            </ul>
+            <ul class="nav-links-secondary">
+              <li>
+                <a href="#"><img src="./musica-icons/profile.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./musica-icons/Vector.png" alt="" /></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="playlist-cover-container ml-5">
+            <div class="playlist-cover">
+              <div class="playlist-cover-text">
+                <h6 class="small-text">currated playlist</h6>
+                <div class="playlist-cover-about">
+                  <h2 class="playlist-cover-title">r & b hits</h2>
+                  <p class="playlist-cover-paragraph">
+                    All mine, Lie again, Petty call me everyday, Out of time, No
+                    love, Bad habit, and so much more
+                  </p>
+                </div>
+                <div class="users-on-album">
+                  <div class="users-profile">
+                    <img
+                      src="./users-profile/Ellipse 2.png"
+                      alt="users-profile"
+                    />
+                    <img
+                      src="./users-profile/Ellipse 3.png"
+                      alt="users-profile"
+                    />
+                    <img
+                      src="./users-profile/Ellipse 4.png"
+                      alt="users-profile"
+                    />
+                    <img
+                      src="./users-profile/Ellipse 5.png"
+                      alt="users-profile"
+                    />
+                    <img
+                      src="./users-profile/Ellipse 6.png"
+                      alt="users-profile"
+                    />
+                  </div>
+                  <div class="likes-container">
+                    <i class="fa-solid fa-heart"></i>
+                    <p class="likes">33k likes</p>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="./images/Vector.svg"
+                alt="vector"
+                class="playlist-cover-vector"
+              />
+              <img
+                src="./images/Pexels Photo by Eric Esma.png"
+                alt="pexels-photo"
+                class="playlist-cover-artist"
+              />
+            </div>
+          </div>
+
+          <div class="top-charts-container">
+            <div class="top-charts">
+              <h2 class="top-charts-title">top charts</h2>
+              <div class="top-charts-bars">
+                <div class="top-album album">
+                  <div>
+                    <div class="top-album-cover-photo">
+                      <img
+                        src="./album-cover/Rectangle 17.png"
+                        alt="album-cover"
+                      />
+                    </div>
+                    <div class="top-album-details details">
+                      <a href="#" class="top-album-title title"
+                        >golden age of 80s</a
+                      >
+                      <h6 class="top-album-artist artist">Sean swadder</h6>
+                      <h6 class="top-album-playtime playtime">2:34:45</h6>
+                    </div>
+                  </div>
+                  <div class="top-album-like-btn like-btn-container">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="second-album album">
+                  <div>
+                    <div class="second-album-cover-photo">
+                      <img
+                        src="./album-cover/Rectangle 18.png"
+                        alt="album-cover"
+                      />
+                    </div>
+                    <div class="second-album-details details">
+                      <a href="#" class="second-album-title title"
+                        >reggae “n” blues</a
+                      >
+                      <h6 class="second-album-artist artist">DJ YK mule</h6>
+                      <h6 class="second-album-playtime playtime">1:02:42</h6>
+                    </div>
+                  </div>
+                  <div class="second-album-like-btn like-btn-container">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+                <div class="third-album album">
+                  <div>
+                    <div class="third-album-cover-photo">
+                      <img
+                        src="./album-cover/Rectangle 19.png"
+                        alt="album-cover"
+                      />
+                    </div>
+                    <div class="third-album-details details">
+                      <a
+                        href="top-chart-index.html"
+                        class="third-album-title title"
+                        >tomorrow’s tune's</a
+                      >
+                      <h6 class="third-album-artist artist">Obi Datti</h6>
+                      <h6 class="third-album-playtime playtime">2:01:25</h6>
+                    </div>
+                  </div>
+                  <div class="third-album-like-btn like-btn-container">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="new-release-container ml-5 pb-3">
+        <div class="new-release">
+          <h2 class="new-release-title">New releases</h2>
+        </div>
+        <div class="carousel-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14.png" alt="" />
+              <h4>Life in a bubble</h4>
+              <p>The van</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (1).png" alt="" />
+              <h4>Mountain</h4>
+              <p>Krisx</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (2).png" alt="" />
+              <h4>Limits</h4>
+              <p>John Dillion</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (3).png" alt="" />
+              <h4>Everything's black</h4>
+              <p>Ameed</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (4).png" alt="" />
+              <h4>Cancelled</h4>
+              <p>Eminem</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (5).png" alt="" />
+              <h4>Nomad</h4>
+              <p>Makrol Eli</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (6).png" alt="" />
+              <h4>Blind</h4>
+              <p>Wiz zee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-release-container ml-5 pb-8">
+        <div class="new-release">
+          <h2 class="new-release-title">Popular in your area</h2>
+        </div>
+        <div class="carousel-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14.png" alt="" />
+              <h4>Life in a bubble</h4>
+              <p>The van</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (1).png" alt="" />
+              <h4>Mountain</h4>
+              <p>Krisx</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (2).png" alt="" />
+              <h4>Limits</h4>
+              <p>John Dillion</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (3).png" alt="" />
+              <h4>Everything's black</h4>
+              <p>Ameed</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (4).png" alt="" />
+              <h4>Cancelled</h4>
+              <p>Eminem</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (5).png" alt="" />
+              <h4>Nomad</h4>
+              <p>Makrol Eli</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <img src="./images/Rectangle 14 (6).png" alt="" />
+              <h4>Blind</h4>
+              <p>Wiz zee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="music-player-container">
+        <div class="music-player">
+          <div class="player">
+            <div class="details">
+              <img class="track-art" />
+              <div>
+                <div class="track-name">Seasons in</div>
+                <div class="track-artist">James</div>
+              </div>
+            </div>
+            <div class="buttons-container">
+              <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()">
+                  <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                  <i class="fa-solid fa-play btn"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                  <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+              </div>
+              <div class="seek-container">
+                <div class="current-time">00:00</div>
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="0"
+                  class="seek-slider"
+                  onchange="seekTo()"
+                  name=""
+                  id=""
+                />
+                <div class="total-duration">00:00</div>
+              </div>
+            </div>
+            <div class="volume-container">
+              <div class="volume-icon">
+                <i class="fa-solid fa-volume-up"></i>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="60"
+                class="volume-slider"
+                onchange="setVolume()"
+                name=""
+                id=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

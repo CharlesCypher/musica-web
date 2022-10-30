@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="top-chart-styles.css" />
+    <script src="./top-chart-script.js" defer></script>
+    <title>Top Charts</title>
+  </head>
+  <body>
+    <div class="musica-container container pd-inline">
+      <header class="header-container container">
+        <div class="header-header">
+          <nav class="header-nav" role="navigation">
+            <div class="logo">
+              <img src="./images/logo.svg" alt="logo" class="img-logo" />
+            </div>
+            <div class="search-container">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                name="search"
+                id="searchArtists"
+                suggestions="off"
+                placeholder="Search artists"
+                suggestions="off"
+                autocomplete="off"
+              />
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="hero-section-container pb-3 pt-7">
+        <div class="hero-section">
+          <nav class="side-nav" role="navigation">
+            <ul class="nav-links-primary">
+              <li>
+                <a href="#"><img src="./musica-icons/home.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./musica-icons/playlist-blanc.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./musica-icons/radio.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./musica-icons/videos.png" alt="" /></a>
+              </li>
+            </ul>
+            <ul class="nav-links-secondary">
+              <li>
+                <a href="#"><img src="./musica-icons/profile.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./musica-icons/logout.png" alt="" /></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hero-content-container ml-5">
+            <div class="hero-content">
+              <div class="hero-image-container">
+                <img src="images/Lead-image.png" alt="" class="hero-img" />
+              </div>
+              <div class="hero-content-text-container">
+                <h2>Tomorrow's tune</h2>
+                <div class="hero-content-paragraph">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                    aliquam, purus sit amet luctus venenatis
+                  </p>
+                  <p>64 songs ~ 16 hrs+</p>
+                </div>
+                <div class="hero-content-btn-container">
+                  <!-- Play button -->
+                  <button class="play-all-button">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Play all</span>
+                  </button>
+                  <button class="add-to-collection-button">
+                    <!-- Collection icon -->
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Add to collection</span>
+                  </button>
+                  <!-- Like button -->
+                  <button class="like-button">
+                    <i class="fa-solid fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TOP CHARTS -->
+          <div class="songs-container ml-5">
+            <div class="songs">
+              <div class="songs-list">
+                <div class="songs-split-left">
+                  <img
+                    src="./track-art/Rectangle 25.png"
+                    alt=""
+                    class="track-art"
+                  />
+                  <div class="song-details">
+                    <p>Let me love you ~ Krisx</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="music-player-container">
+        <div class="music-player">
+          <div class="player">
+            <div class="details">
+              <div>
+                <div class="track-name">Seasons in</div>
+                <div class="track-artist">James</div>
+              </div>
+            </div>
+            <div class="buttons-container">
+              <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()">
+                  <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                  <i class="fa-solid fa-play btn"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                  <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+              </div>
+              <div class="seek-container">
+                <div class="current-time">00:00</div>
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="0"
+                  class="seek-slider"
+                  onchange="seekTo()"
+                  name=""
+                  id=""
+                />
+                <div class="total-duration">00:00</div>
+              </div>
+            </div>
+            <div class="volume-container">
+              <div class="volume-icon">
+                <i class="fa-solid fa-volume-up"></i>
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="60"
+                class="volume-slider"
+                onchange="setVolume()"
+                name=""
+                id=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
