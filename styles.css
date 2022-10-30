@@ -626,14 +626,6 @@ p {
         height: auto;
     }
 
-    .player .details .track-name {
-        font-size: 12px;
-    }
-
-    .player .details .track-artist {
-        font-size: 10px;
-    }
-
     /* top charts */
 
     .top-charts-container {
@@ -678,20 +670,33 @@ p {
         margin-bottom: .5rem;
     }
 
+    /* Player */
     .music-player {
-        width: 90%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0 auto;
     }
 
     .music-player .details {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
+        display: none;
+    }
+
+    .player .details .track-name {
+        font-size: 12px;
+    }
+
+    .player .details .track-artist {
+        font-size: 10px;
     }
 
     .seek-container .seek-slider {
-        width: 10rem;
+        width: 14rem;
     }
 
     .volume-container {
