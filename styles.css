@@ -88,7 +88,19 @@ img:not(.logo) {
 .header-nav {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: stretch;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 1.4rem;
+    height: 0.12rem;
+    background-color: var(--clr-white);
+    margin: 0.5rem 0;
 }
 
 .search-container {
@@ -268,7 +280,7 @@ p {
 .top-charts .title {
     font-size: 17px;
     color: var(--clr-white);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: .3rem;
     text-transform: capitalize;
 }
@@ -588,12 +600,17 @@ p {
 
 
 @media screen and (max-width: 426px) {
+    .hamburger {
+        display: block;
+    }
+
     .search-container {
         margin-left: 0rem;
     }
 
     .search-container i {
         margin-right: .3rem;
+        margin-left: 2rem;
     }
 
     .playlist-cover-artist {
@@ -680,11 +697,11 @@ p {
     }
 
     .music-player .details {
-        /* display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; */
-        display: none;
+        align-items: center;
+        /* display: none; */
     }
 
     .player .details .track-name {
@@ -693,6 +710,10 @@ p {
 
     .player .details .track-artist {
         font-size: 10px;
+    }
+
+    .player .details .track-art {
+        display: none;
     }
 
     .seek-container .seek-slider {
