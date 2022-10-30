@@ -214,3 +214,16 @@ function random_bg_color() {
   // Set the background to the new color
   document.body.style.background = bgColor;
 }
+
+// Hamburger menu
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".hamburger-links");
+const links = document.querySelectorAll(".hamburger-links-list li");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("open");
+  // navLinks.classList.toggle("open");s
+  links.forEach((link) => {
+    link.classList.toggle("fade");
+  });
+});
