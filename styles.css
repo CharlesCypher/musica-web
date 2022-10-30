@@ -697,11 +697,11 @@ p {
     }
 
     .music-player .details {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        /* display: none; */
+        align-items: center; */
+        display: none;
     }
 
     .player .details .track-name {
@@ -713,7 +713,7 @@ p {
     }
 
     .player .details .track-art {
-        display: none;
+        /* display: none; */
     }
 
     .seek-container .seek-slider {
