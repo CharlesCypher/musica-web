@@ -1,6 +1,9 @@
 let track_art = document.querySelector(".track-art");
+let mobile_track_art = document.querySelector(".mobile-player-track-art");
 let track_name = document.querySelector(".track-name");
+let mobile_track_name = document.querySelector(".mobile-player-track-name");
 let track_artist = document.querySelector(".track-artist");
+let mobile_track_artist = document.querySelector(".mobile-player-track-artist");
 
 let playpause_btn = document.querySelector(".playpause-track");
 let next_btn = document.querySelector(".next-track");
@@ -23,16 +26,16 @@ let curr_track = document.createElement("audio");
 // Define the list of tracks that have to be played
 let track_list = [
   {
+    name: "Organise",
+    artist: "Asake",
+    image: "./album-cover/Asakee-1024x1024.png",
+    path: "music/Asake_-_Organise.mp3",
+  },
+  {
     name: "In my mind",
     artist: "BNXN fka Buju",
     image: "./album-cover/in-my-mind-artwork.png",
     path: "music/Bnxn-In-My-Mind-(TrendyBeatz.com).mp3",
-  },
-  {
-    name: "Organise",
-    artist: "Asake",
-    image: "./album-cover/asake-organise-artwork.png",
-    path: "music/Asake_-_Organise.mp3",
   },
 
   // {
@@ -55,9 +58,12 @@ function loadTrack(track_index) {
   // Update details of the track
   track_art.style.backgroundImage =
     "url(" + track_list[track_index].image + ")";
+  mobile_track_art.src = track_list[track_index].image;
   // track_art.src = track_list[track_index].image;
   track_name.textContent = track_list[track_index].name;
+  mobile_track_name.textContent = track_list[track_index].name;
   track_artist.textContent = track_list[track_index].artist;
+  mobile_track_artist.textContent = track_list[track_index].artist;
   // now_playing.textContent =
   //    "PLAYING " + (track_index + 1) + " OF " + track_list.length;
 
@@ -226,4 +232,19 @@ hamburger.addEventListener("click", () => {
   links.forEach((link) => {
     link.classList.toggle("fade");
   });
+});
+
+const mobilePlayerToggleBtn = document.getElementById(
+  "mobile-player-toggle-btn"
+);
+const musicPlayerContainer = document.querySelector(".music-player-container");
+const mobilePlayerDetails = document.querySelector(".mobile-player-details");
+const mobilePlayerUpperElement = document.querySelector(
+  ".mobile-player-upper-element"
+);
+
+mobilePlayerToggleBtn.addEventListener("click", () => {
+  mobilePlayerDetails.classList.toggle("expand-player");
+  mobilePlayerUpperElement.classList.toggle("clear");
+  musicPlayerContainer.classList.toggle("player-default");
 });
