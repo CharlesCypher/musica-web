@@ -371,6 +371,14 @@ p {
     z-index: 900;
 }
 
+.mobile-player-upper-element {
+    display: none;
+}
+
+.mobile-player-details {
+    display: none;
+}
+
 .music-player {
     width: 95%;
     margin: 0 auto;
@@ -643,7 +651,7 @@ p {
     }
 
     .hamburger-links-list {
-        padding: 4em 3em;
+        padding: 5em 3em;
     }
 
     .hamburger-links-list-item {
