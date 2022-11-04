@@ -763,9 +763,6 @@ p {
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.1px);
-        -webkit-backdrop-filter: blur(6.1px);
         border-top: 1px solid var(--clr-white-500);
         padding: 1rem 0;
         display: flex;
@@ -783,6 +780,10 @@ p {
 
     .player-default {
         height: auto;
+        background: rgba(21, 23, 24, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
     }
 
     .mobile-player-details {
